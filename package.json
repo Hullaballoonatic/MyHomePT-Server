@@ -1,0 +1,38 @@
+{
+  "name": "myhomept-server",
+  "version": "1.0.0",
+  "description": "myhomept-server",
+  "license": "ISC",
+  "main": "app/server.js",
+  "scripts": {
+    "start": "node .",
+    "postinstall": "npm run compile",
+    "compile": "tsc",
+    "start-dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.uark.edu/myhomept/myhomept-server.git"
+  },
+  "author": "",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "@types/lodash": "^4.14.123",
+    "@types/node": "^11.11.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.4.19",
+    "uuidv4": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.3333"
+  }
+}
